@@ -1,0 +1,13 @@
+fractal.o: precision.o
+fractal.o: solvers.o
+fractal.o: functions.o
+functions.o: precision.o
+runge_kutta.o: precision.o
+runge_kutta.o: precision.o
+runge_kutta.o: precision.o
+runge_kutta.o: precision.o
+runge_kutta.o: precision.o
+runge_kutta.o: precision.o
+runge_kutta.o: precision.o
+solvers.o: precision.o
+solvers.o: precision.o
