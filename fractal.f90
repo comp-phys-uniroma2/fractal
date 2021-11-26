@@ -99,8 +99,8 @@ program fractal
      ! run time propagation
      do k = 1, Nstep
        if (k > Ntr) then
-         where (y(0:bufsize-1)>3.25) y(0:bufsize-1)=y(0:bufsize-1)-2.0_dp*Pi     
-         where (y(0:bufsize-1)<-3.25) y(0:bufsize-1)=y(0:bufsize-1)+2.0_dp*Pi     
+         where (y(0:bufsize-1)>Pi) y(0:bufsize-1)=y(0:bufsize-1)-2.0_dp*Pi     
+         where (y(0:bufsize-1)<-Pi) y(0:bufsize-1)=y(0:bufsize-1)+2.0_dp*Pi     
          av_teta=av_teta+y(0:bufsize-1)
        end if  
        call dopri54(pendolo4,t,h,y,y,abserr)
